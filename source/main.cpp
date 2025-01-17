@@ -16,7 +16,7 @@ void displayClock(){
 
         std::cout << std::setfill('0') << std::setw(2) << localTime->tm_hour << ":"
                   << std::setfill('0') << std::setw(2) << localTime->tm_min << ":"
-                  << std::setfill('0') << std::setw(2) << localTime->tm_sec << ":" << std::endl;
+                  << std::setfill('0') << std::setw(2) << localTime->tm_sec << "" << std::endl;
 
         std::this_thread::sleep_for(std::chrono::seconds(1));
 
